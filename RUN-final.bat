@@ -144,8 +144,18 @@ if (-not $SkipWinget) {
     
     # 무조건 new 실행
 	# [수정] 현재 폴더에 결과물 생성 (--out .)
-    try { Invoke-Expression "wingetcreate $WingetCmd --out ." } 
-    catch { Print-Msg "오류: $_" "Red"; Pause; exit }
+try {
+        # [수정] --out 옵션 제거 (지원안함) / Call Operator(&)는 유지 (안전성)
+        & wingetcreate new
+		
+        # 실행 결과 검증
+        if ($LASTEXITCODE -ne 0) { throw "Wingetcreate 비정상 종료 (코드: $LASTEXITCODE)" }
+    } catch {
+        Print-Msg "[Exec Error] wingetcreate 실행 실패." "Red"
+        Print-Msg "상세 에러: $_" "Red"
+        Pause
+        exit
+    }
     
     Print-Msg "Manifest 완료." "Green"
     Confirm-Continue
