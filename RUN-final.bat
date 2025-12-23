@@ -143,7 +143,8 @@ if (-not $SkipWinget) {
     }
     
     # 무조건 new 실행
-    try { Invoke-Expression "wingetcreate new" } 
+	# [수정] 현재 폴더에 결과물 생성 (--out .)
+    try { Invoke-Expression "wingetcreate $WingetCmd --out ." } 
     catch { Print-Msg "오류: $_" "Red"; Pause; exit }
     
     Print-Msg "Manifest 완료." "Green"

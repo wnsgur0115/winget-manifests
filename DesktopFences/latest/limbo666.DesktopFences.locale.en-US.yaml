@@ -5,7 +5,7 @@ PackageIdentifier: limbo666.DesktopFences
 PackageVersion: 2.5.4.188
 PackageLocale: en-US
 Publisher: limbo666
-PackageName: Desktop Fences
+PackageName: Desktop Fences+
 License: MIT License
 ShortDescription: Desktop Fences+ is an open-source alternative to Stardock Fences, originally created by HakanKokcu under the name BirdyFences.
 ManifestType: defaultLocale
