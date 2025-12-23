@@ -1,0 +1,17 @@
+# Created using wingetcreate 1.10.3.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: limbo666.DesktopFences
+PackageVersion: 2.5.4.188
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: Desktop Fences.exe
+  PortableCommandAlias: desktopfences
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/wnsgur0115/winget-manifests/releases/download/2.5.4.188/Desktop.Fences.+.zip
+  InstallerSha256: FD648C6BC0A49155407D0B3FF0E5A7AA10C24D72474C989C948E975E2141E931
+ManifestType: installer
+ManifestVersion: 1.10.0
