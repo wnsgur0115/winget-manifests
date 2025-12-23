@@ -6,11 +6,11 @@ PackageVersion: 2.5.4.188
 InstallerType: zip
 NestedInstallerType: portable
 NestedInstallerFiles:
-- RelativeFilePath: Desktop Fences +\Desktop Fences.exe
+- RelativeFilePath: "Desktop Fences.exe"
   PortableCommandAlias: desktopfences
 Installers:
 - Architecture: x64
-  InstallerUrl: https://github.com/limbo666/DesktopFences/releases/download/2.5.4.188/Desktop.Fences.+.zip
-  InstallerSha256: B39B8686069DFE6158145E36A30B3463B3D7AD36C9956039A5B2AE8CB61462FC
+  InstallerUrl: https://github.com/wnsgur0115/winget-manifests/raw/refs/heads/main/DesktopFences/latest/Desktop.Fences.+.zip
+  InstallerSha256: fd648c6bc0a49155407d0b3ff0e5a7aa10c24d72474c989c948e975e2141e931
 ManifestType: installer
 ManifestVersion: 1.10.0
